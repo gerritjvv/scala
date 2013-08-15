@@ -109,6 +109,8 @@ trait ScalaSettings extends AbsScalaSettings
   val XnoPatmatAnalysis = BooleanSetting ("-Xno-patmat-analysis", "Don't perform exhaustivity/unreachability analysis. Also, ignore @switch annotation.")
   val XfullLubs     = BooleanSetting    ("-Xfull-lubs", "Retains pre 2.10 behavior of less aggressive truncation of least upper bounds.")
 
+  val ignoreMissingInnerClass =  BooleanSetting ("-Xignore-missing-inner-class", "Ignore inner class scanning, this is required when integrating with dynamic languages where inner classes may not exist")
+  
   /** Compatibility stubs for options whose value name did
    *  not previously match the option name.
    */
